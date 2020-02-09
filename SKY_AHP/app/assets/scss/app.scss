@@ -1,0 +1,7 @@
+@charset 'UTF-8';
+//import variables - Need to be defined before Foundation
+@import 'partials/variables';
+//import foundation styles
+@import 'foundationStyles';
+// import custom styles
+@import 'appStyles';

@@ -1,0 +1,387 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+}
+ol, ul {
+	list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+
+
+/*END RESET CSS*/
+
+/*
+ * Web Fonts from fontspring.com
+ *
+ * All OpenType features and all extended glyphs have been removed.
+ * Fully installable fonts can be purchased at http://www.fontspring.com
+ *
+ * The fonts included in this stylesheet are subject to the End User License you purchased
+ * from Fontspring. The fonts are protected under domestic and international trademark and 
+ * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
+ * distributing this font software.
+ *
+ * (c) 2010-2012 Fontspring
+ *
+ *
+ *
+ *
+ * The fonts included are copyrighted by the vendor listed below.
+ *
+ * Vendor:      Synthview Type Design
+ * License URL: http://www.fontspring.com/fflicense/synthview
+ *
+ *
+ */
+
+
+
+
+@font-face {
+    font-family: 'NovecentowideNormalRegular';
+    src: url('Novecentowide-Normal-webfont.eot');
+    src: url('Novecentowide-Normal-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Novecentowide-Normal-webfont.woff') format('woff'),
+         url('Novecentowide-Normal-webfont.ttf') format('truetype'),
+         url('Novecentowide-Normal-webfont.svg#NovecentowideNormalRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'NovecentowideUltraLightBold';
+    src: url('Novecentowide-Medium-webfont.eot');
+    src: url('Novecentowide-Medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Novecentowide-Medium-webfont.woff') format('woff'),
+         url('Novecentowide-Medium-webfont.ttf') format('truetype'),
+         url('Novecentowide-Medium-webfont.svg#NovecentowideUltraLightBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+body {
+	background-color:#72969B;
+}
+
+
+#wrapper {
+	width:960px;
+	min-height:768px;
+	margin:0 auto;
+	background-color:#fff;
+}
+
+#echoBayHeader {
+	width:350px;
+	height:53px;
+	float:left;
+	margin:30px 0 0 44px;
+}
+
+#echoBayHeader p {
+	font-family:"NovecentowideNormalRegular";
+	color:#8A5F3E;
+	font-size:.7em;
+	width:380px;
+	min-height:20px;
+	padding-top:15px;
+	
+}
+
+#headerNav {
+	float:right;
+	width:auto;
+	min-height:20px;
+	margin-top:94px;
+	margin-right:25px;
+	
+}
+
+
+#headerNav li{
+	font-family:"NovecentowideNormalRegular";
+	font-size:.86em;
+	list-style-type:none;
+	display:inline;
+	text-decoration:none;
+}
+
+
+li a {
+	text-decoration:none;
+	font-family:"NovecentowideUltraLightBold";
+	color:#2A2627;
+}
+
+li a:visited {
+	text-decoration:none;
+	font-family:"NovecentowideNormalRegular";
+	color:#2A2627;
+}
+
+li a:hover {
+	text-decoration:none;
+	font-family:"NovecentowideUltraLightBold";
+	color:#72969B;
+}
+
+#echoBayHero {
+	width:960px;
+	height:296px;
+	float:left;
+	margin-top:15px;
+}
+
+
+#bodyText {
+	width:auto;
+	min-height:90px;
+	float:left;
+	margin:30px 0 0 44px;
+	line-height:1.8em;
+	font-size:.9em;
+}
+
+#bodyText h1 {
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	color:#2A2627;
+}
+
+#bodyText h2 {
+	font-family:Arial, Helvetica, sans-serif;
+	color:#2A2627;
+}
+
+
+
+#echoBaySiteMap {
+	width:450px;
+	height:266px;
+	float:right;
+	margin:35px 10px 32px 0;
+}
+
+
+#deisLink {
+	width:283px;
+	height:89px;
+	background-image:url(images/DEIS_background.png);
+	float:left;
+	margin-top:40px;
+	
+}
+
+#deisLink a {
+	text-decoration:none;
+	font-family:Arial, Helvetica, sans-serif;
+	padding:15px 0 0 42px;
+	color:#fff;
+	font-size:.85em;
+	line-height:1.4em;
+	display:block;
+	letter-spacing:.05em;
+}
+
+
+#aboutBodyText {
+	width:924px;
+	min-height:1730px;
+	clear:both;
+	margin:0 auto;
+	line-height:1.2em;
+}
+
+h4 {
+	color:#8A5F3E;
+	font-size:1.4em;
+	font-family:"NovecentowideNormalRegular";
+}
+
+h6 {
+	color:#2A2627;
+	font-size:.96em;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+}
+
+
+
+#aboutHeader {
+	float:right;
+	width:900px;
+	margin:25px 18px 15px 0;
+	border-top:solid 1px #B69049;
+	font-family:"NovecentowideNormalRegular";
+	text-align:right;
+	color:#72969B;
+	font-size:2em;
+	padding-top:20px;
+	padding-right:24px;
+}
+
+
+#bodyTextTopLeft {
+	float:left;
+	/*background-color:#FFC;*/
+	width:408px;
+	min-height:640px;
+	margin-left:32px;
+	margin-top:24px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#2A2627;
+	font-size:.875em;
+}
+
+#bodyTextTopLeft ul {
+	list-style-type:square;
+}
+
+#bodyTextTopRight {
+	float:right;
+	/*background-color:#FFC;*/
+	width:408px;
+	min-height:640px;
+	margin-right:24px;
+	margin-top:24px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#2A2627;
+	font-size:.875em;
+	padding-top:37px;
+
+}
+
+#bodyTextTopRight ul {
+	list-style-type:square;
+}
+
+#bodyTextBottomLeft {
+	float:left;
+	/*background-color:#FFC;*/
+	width:408px;
+	height:472px;
+	margin-left:32px;
+	margin-top:24px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#2A2627;
+	font-size:.875em;
+}
+
+#bodyTextBottomLeft ul {
+	list-style-type:square;
+}
+
+
+
+#bodyTextBottomRight {
+	float:right;
+	/*background-color:#FFC;*/
+	width:408px;
+	height:400px;
+	margin-right:24px;
+	margin-top:24px;
+	margin-bottom:30px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#2A2627;
+	font-size:.875em;
+}
+
+#bodyTextBottomRight ul {
+	list-style-type:square;
+}
+
+#rutgersChart {
+	width:800px;
+	height:438px;
+	clear:both;
+	margin:0 auto;
+}
+
+#rutgersChart h4 {
+	margin-left:-31px;
+	padding-bottom:20px;
+}
+
+
+#footer {
+	width:924px;
+	min-height:70px;
+	border-top:solid 1px #B69049;
+	margin:0 auto;
+	clear:both;
+}
+
+
+
+#footer img {
+	margin-top:10px;
+	margin-left:26px;
+	width:165px;
+	height:15px;
+	float:left;
+	padding-top:10px;
+}
+
+
+/*#contactIframe {
+	margin-left:60px;
+	margin-top:20px;
+	display:block;
+	float:left;
+}
+	*/
+	
+#petition {
+	display:block;
+	clear:both;
+	margin:0 auto;
+	padding-top:30px;
+	width:760px;
+	height:500px;
+}
+
+
+
+
