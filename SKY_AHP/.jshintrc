@@ -1,0 +1,28 @@
+{
+  "curly": true,
+  "freeze": true,
+  "quotmark": true,
+  "browser": true,
+  "devel": true,
+  "undef": true,
+  "jquery": true,
+  "trailing": true,
+  "maxparams": 10,
+  "maxdepth": 5,
+  "maxcomplexity": 10, //watch out once you get into the 6-10 range. Refactor if you are 10+
+
+
+  // Custom globals.
+  "predef"        : [
+      "define",
+      "require",
+      "requirejs",
+      "Foundation",
+      "createCalendar",
+      "s7viewers",
+      "ACC",
+      "aemJVar",
+      "digitalData",
+      "Bloodhound"
+  ]
+}
