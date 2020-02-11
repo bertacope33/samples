@@ -1,0 +1,686 @@
+/*
+Theme Name: Care Contest
+Theme URI: http://shawncope.com
+Description: A theme completely stripped of all styling and structure. Functionality and limited style is based on the twentytwelve theme and html5-bolierplate.
+Version: 1.0
+Author: Shawn Cope
+Author URI: http://shawncope.com
+Tags: blankSlate, no style, clean, empty
+
+This theme was undesigned and built by Shawn Cope,
+whose blog you will find at http://shawncope.com/
+
+
+*/
+
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ *
+ * Detailed information about this CSS: h5bp.com/css
+ *
+ * ==|== normalize ==========================================================
+ */
+
+
+/* =============================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
+
+/* =============================================================================
+   Base
+   ========================================================================== */
+
+/*
+ * 1. Correct text resizing oddly in IE6/7 when body font-size is set using em units
+ * 2. Prevent iOS text size adjust on device orientation change, without disabling user zoom: h5bp.com/g
+ */
+
+html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+html, button, input, select, textarea { font-family: sans-serif; color: #222; }
+body { margin: 0; font-size: 1em; line-height: 1.4; }
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate
+ * Also: hot pink! (or customize the background color to match your design)
+ */
+
+::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+
+
+/* =============================================================================
+   Links
+   ========================================================================== */
+
+a { color: #00e; }
+a:visited { color: #551a8b; }
+a:hover { color: #06e; }
+a:focus { outline: thin dotted; }
+
+/* Improve readability when focused and hovered in all browsers: h5bp.com/h */
+a:hover, a:active { outline: 0; }
+
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
+
+abbr[title] { border-bottom: 1px dotted; }
+b, strong { font-weight: bold; }
+blockquote { margin: 1em 40px; }
+dfn { font-style: italic; }
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+ins { background: #ff9; color: #000; text-decoration: none; }
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+
+/* Redeclare monospace font family: h5bp.com/j */
+pre, code, kbd, samp { font-family: monospace, serif; _font-family: 'courier new', monospace; font-size: 1em; }
+
+/* Improve readability of pre-formatted text in all browsers */
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+small { font-size: 85%; }
+
+/* Position subscript and superscript content without affecting line-height: h5bp.com/k */
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+/*
+ * Web Fonts from fontspring.com
+ *
+ * All OpenType features and all extended glyphs have been removed.
+ * Fully installable fonts can be purchased at http://www.fontspring.com
+ *
+ * The fonts included in this stylesheet are subject to the End User License you purchased
+ * from Fontspring. The fonts are protected under domestic and international trademark and 
+ * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
+ * distributing this font software.
+ *
+ * (c) 2010-2013 Fontspring
+ *
+ *
+ *
+ *
+ * The fonts included are copyrighted by the vendor listed below.
+ *
+ * Vendor:      Mostardesign
+ * License URL: http://www.fontspring.com/fflicense/mostardesign
+ *
+ *
+ */
+
+@font-face {
+    font-family: 'sofia_pro_lightregular';
+    src: url('SofiaProLight-webfont.eot');
+    src: url('SofiaProLight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('SofiaProLight-webfont.woff') format('woff'),
+         url('SofiaProLight-webfont.ttf') format('truetype'),
+         url('SofiaProLight-webfont.svg#sofia_pro_lightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Generated by Font Squirrel (http://www.fontsquirrel.com) on April 13, 2011 */
+
+
+
+@font-face {
+    font-family: 'ChunkFiveRoman';
+    src: url('chunkfive-webfont.eot');
+    src: url('chunkfive-webfont.eot?#iefix') format('eot'),
+         url('chunkfive-webfont.woff') format('woff'),
+         url('chunkfive-webfont.ttf') format('truetype'),
+         url('chunkfive-webfont.svg#webfontRMR1AlgU') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
+
+ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
+dd { margin: 0 0 0 40px; }
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+
+
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+
+/*
+ * 1. Improve image quality when scaled in IE7: h5bp.com/d
+ * 2. Remove the gap between images and borders on image containers: h5bp.com/i/440
+ */
+
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+
+/*
+ * Correct overflow not hidden in IE9
+ */
+
+svg:not(:root) { overflow: hidden; }
+
+
+/* =============================================================================
+   Figures
+   ========================================================================== */
+
+figure { margin: 0; }
+
+
+/* =============================================================================
+   Forms
+   ========================================================================== */
+
+form { margin: 0; }
+fieldset { border: 0; margin: 0; padding: 0; }
+
+/* Indicate that 'label' will shift focus to the associated form element */
+label { cursor: pointer; }
+
+/*
+ * 1. Correct color not inheriting in IE6/7/8/9
+ * 2. Correct alignment displayed oddly in IE6/7
+ */
+
+legend { border: 0; *margin-left: -7px; padding: 0; white-space: normal; }
+
+/*
+ * 1. Correct font-size not inheriting in all browsers
+ * 2. Remove margins in FF3/4 S5 Chrome
+ * 3. Define consistent vertical alignment display in all browsers
+ */
+
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+
+/*
+ * 1. Define line-height as normal to match FF3/4 (set using !important in the UA stylesheet)
+ */
+
+button, input { line-height: normal; }
+
+/*
+ * 1. Display hand cursor for clickable form elements
+ * 2. Allow styling of clickable form elements in iOS
+ * 3. Correct inner spacing displayed oddly in IE7 (doesn't effect IE6)
+ */
+
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; *overflow: visible; }
+
+/*
+ * Re-set default cursor for disabled elements
+ */
+
+button[disabled], input[disabled] { cursor: default; }
+
+/*
+ * Consistent box sizing and appearance
+ */
+
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0; *width: 13px; *height: 13px; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button { -webkit-appearance: none; }
+
+/*
+ * Remove inner padding and border in FF3/4: h5bp.com/l
+ */
+
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+
+/*
+ * 1. Remove default vertical scrollbar in IE6/7/8/9
+ * 2. Allow only vertical resizing
+ */
+
+textarea { overflow: auto; vertical-align: top; resize: vertical; }
+
+/* Colors for form validity */
+input:valid, textarea:valid {  }
+input:invalid, textarea:invalid { background-color: #f0dddd; }
+
+
+/* =============================================================================
+   Tables
+   ========================================================================== */
+
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+
+
+/* =============================================================================
+   Chrome Frame Prompt
+   ========================================================================== */
+
+.chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
+
+
+/* ==|== primary styles =====================================================
+   Author: Roberta Cope
+   ========================================================================== */
+
+
+/* Utility Styles************************/
+.alignright { float: right; text-align: right; }
+.alignleft { float: left; text-align: left; }
+.aligncenter { display: block; margin: 0 auto; }
+.assistive-text {display: none;}
+
+
+
+
+/* General Styles************************/
+body {
+  background: url(images/careBackground.png) repeat left top;
+}
+
+#page {
+  width:960px;
+  margin: 0 auto;
+  background: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #AC5DA5;
+}
+
+a:hover {
+  color: #93268F;
+}
+
+a:visited {
+  color:#AC5DA5;
+}
+
+/* Header Styles************************/
+.site-header {
+  width: 100%;
+  height: 298px;
+  background: url(images/careHeader.jpg) no-repeat left top;
+}
+
+h1.logo {
+  width: 397px;
+  height: 205px;
+  margin: 44px 0 0 44px;
+  float: left;
+  text-indent: -9999px;
+  background: url(images/headerCARELogo2014.png) no-repeat left top;
+}
+h1.logo a {
+  width: 397px;
+  height: 205px;
+  display: block;
+}
+
+.socialNav {
+  width: 60px;
+  margin-right: 25px;
+  float: right;
+}
+.socialNav a {
+  text-decoration: none;
+}
+
+.socialNav ul {
+  list-style-type:none;
+}
+.socialNav li {
+  display: block;
+  clear: both;
+}
+
+.CAREFacebook {
+  width: 19px;
+  height: 33px;
+  background: url(images/headerFacebook.png) no-repeat left top;
+  display: block;
+  float: right;
+  margin-top: 18px;
+
+}
+
+.CAREPinterest{
+  width: 27px;
+  height: 26px;
+  background: url(images/headerPinterest.png) no-repeat left top;
+  display: block;
+  float: right;
+  margin-top: 12px;
+
+
+}
+
+.CARETwitter {
+  width: 27px;
+  height: 22px;
+  background: url(images/headerTwitter.png) no-repeat left top;
+  display: block;
+  float: right;
+  margin-top: 12px;
+
+}
+
+.CAREInstagram {
+  width: 28px;
+  height: 28px;
+  background: url(images/headerInstagram.png) no-repeat left top;
+  display: block;
+  float: right;
+  margin-top: 12px;
+
+}
+
+.CAREGooglePlus {
+  width: 31px;
+  height: 31px;
+  background: url(images/headerGoogleplus.png) no-repeat left top;
+  display: block;
+  float: right;
+  margin-top: 12px;
+
+}
+
+.CAREYouTube {
+  width: 27px;
+  height: 32px;
+  background: url(images/headerYoutube.png) no-repeat left top;
+  display: block;
+  float: right;
+  margin-top: 12px;
+
+}
+
+
+
+
+/* Navigation Styles************************/
+#site-navigation {
+  width: 100%;
+  height: 20px;
+  clear: both;
+}
+#site-navigation ul {
+  list-style: none;
+
+}
+#site-navigation ul li{
+  display: block;
+  float: left;
+  margin: 25px 28px 0 0;
+  padding: 25px 0 0 0;
+  font-family: 'ChunkFiveRoman', Arial, sans-serif; 
+}
+
+#site-navigation ul li a {
+  text-decoration: none;
+  color: #AC5EA5;
+}
+#site-navigation ul li.about a {
+  color: #AC5EA5;
+}
+#site-navigation ul li.contest a {
+  color: #FCB33A;
+}
+#site-navigation ul li.score a {
+  color: #29BEC3;
+}
+#site-navigation ul li.entry a {
+  color: #F2693B;
+}
+
+
+#convoBlurb {
+  background: url(images/joinTheConversationBlurb2.png) no-repeat;
+  width: 175px;
+  height: 76px;
+  float: right;
+  display: inline;
+  margin: -61px 25px 0 0;
+}
+
+
+#slideshow {
+  width: 960px;
+  height: 281px;
+  float: left;
+  clear: both;
+  margin-top: 10px;
+}
+
+/* Content Styles************************/
+#primary {
+  width: 600px;
+  float: left;
+  margin: 30px 0 40px 40px;
+  min-height: 900px
+}
+
+.site-content h1, .site-content h1 a {
+  font:1em/1.3em normal normal 'ChunkFiveRoman', Arial, sans-serif;
+  color: #464547;
+}
+
+.site-content p {
+  font:.8em/.8em; normal normal 'sofia_pro_lightregular', Arial, sans-serif;
+}
+
+.entry-header h1 {
+  font-family: 'ChunkFiveRoman', Arial, sans-serif;
+  font-size: 1.9em;
+  line-height: 1.2em;
+  letter-spacing: .015em;
+}
+
+.entry-header .comments-link {
+  display:none;
+}
+
+.post {
+  border-bottom: 2px solid #BBBDC0;
+  padding-bottom: 45px;
+  margin-bottom: 45px;
+}
+.entry-content {
+  padding-bottom: 15px;
+  font-size: .95em;
+  font-family: 'sofia_pro_lightregular', Arial, sans-serif;
+}
+
+/* Sidebar Styles************************/
+#sidebar {
+  width: 210px;
+  float: right;
+  margin-right: 40px;
+  margin-top: 50px;
+  display: block;
+  border-left: 1px solid #BBBDC0;
+  padding-left: 25px;
+}
+
+#sidebar a {
+  text-decoration: none;
+  font-size: .9em;
+  font-family: 'sofia_pro_lightregular', Arial, sans-serif;
+  color: #231F20;
+}
+
+#sidebar a:hover {
+  color: #838081;
+}
+
+#sidebar h3 {
+  color: #F48420;
+  font-size: 1em;
+  font-family: 'sofia_pro_lightregular', Arial, sans-serif;
+  margin-top: 10px;
+  letter-spacing: .06em;
+}
+
+#sidebar p {
+  color: #231F20;
+  font-size: .88em;
+  font-family: 'sofia_pro_lightregular', Arial, sans-serif;
+  padding-left: 20px;
+}
+
+/* Footer Styles************************/
+
+#footer {
+  clear:both;
+  background: #333132;
+  height: 312px;
+  width: 960px;
+  margin-top: 50px;
+}
+
+#footer ul {
+  list-style: none;
+}
+
+
+#footer ul li {
+  display: block;
+  float: left;
+  margin-top: -5px;
+  padding-bottom: 53px;
+}
+
+
+.contact {
+  background: url(images/footerContactIcon.png) no-repeat;
+  float: left;
+  margin-left: 50px;
+  width: 214px;
+  height: 193px;
+}
+
+.resources {
+  background: url(images/footerResourcesIcon.png) no-repeat;
+  float: left;
+  width: 142px;
+  height: 193px;
+}
+
+.eventPhotos {
+  background: url(images/footerPhotosIcon.png) no-repeat;
+  float: left;
+  width: 246px;
+  height: 193px;
+}
+
+.journal {
+  background: url(images/footerJournalInspirationIcon.png) no-repeat;
+  float: right;
+  margin-right: 98px;
+  width: 166px;
+  height: 193px;
+}
+
+.footerLogo {
+  background: url(images/footerFCCaresLogo.png) no-repeat;
+  margin: 0 auto; 
+  width: 213px;
+  height: 41px;
+  clear: both;
+}
+
+#footer p {
+  display: block;
+  float: right;
+  margin: -16px 53px 0 0;
+}
+
+#footer a {
+  color:#6B696A;
+  font-family: 'sofia_pro_lightregular', Arial, sans-serif;
+  font-size: .8em;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+/* ==|== media queries ======================================================
+   EXAMPLE Media Query for Responsive Design.
+   This example overrides the primary ('mobile first') styles
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+
+
+/* ==|== non-semantic helper classes ========================================
+   Please define your styles before this section.
+   ========================================================================== */
+
+/* For image replacement */
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; *line-height: 0; }
+.ir br { display: none; }
+
+/* Hide from both screenreaders and browsers: h5bp.com/u */
+.hidden { display: none !important; visibility: hidden; }
+
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible { visibility: hidden; }
+
+/* Contain floats: h5bp.com/q */
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+
+
+/* ==|== print styles =======================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+  * { background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
+  a, a:visited { text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; } /* h5bp.com/t */
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}
+
+
